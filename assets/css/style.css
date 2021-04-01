@@ -1299,8 +1299,21 @@ section .section-title {
 }
 
 @media only screen and (max-width: 600px)  {
+  .notification-container .notification-card{
+    margin-left: 50px;
+    text-align: center;
+  }
   .notification-container .card-body{
     width: 25px;
+  }
+
+  .notification-container .card-body table{
+    width: auto;
+    text-align: center;
+  }
+  .notification-container .card-body table {
+    float: left;
+    width: 270px;
   }
   .section-title{
     font-size: 20px;
@@ -1472,7 +1485,8 @@ section .section-title {
     background-attachment: fixed;
 }
 #myCarousel h4{
-  font-size:50px;
+  font-size:35px;
+  margin-top: 10px;
   margin-bottom:15px;
   color:#FFF;
   line-height:100%;
