@@ -127,12 +127,13 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Workshops</li>
+              <li data-filter=".filter-app" id="#workshops">Workshops</li>
               <li data-filter=".filter-card">Talks</li>
               <li data-filter=".filter-web">Events</li>
             </ul>
           </div>
         </div>
+
 
         <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
@@ -344,6 +345,14 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+    $('#workshops').click(function() {
+      $(this).toggleClass('open');
+      $('#workshops ,#workshops').toggleClass('toggled');
+
+    });
+  </script>
 
 
 </body>
