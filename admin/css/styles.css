@@ -537,6 +537,11 @@ Gallery
     font-size: 0;
 }
 
+#gallery p{
+  font-size: 15px;
+  color: black;
+}
+
 
 #gallery .img-responsive{
   height: 250px;
